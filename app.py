@@ -97,6 +97,6 @@ def handleRequest():
     return "[RESP]0"
 
 # Space for other methods
-run(host='0.0.0.0', port=8070, debug=True)
+run(host='0.0.0.0', port=8080, debug=True)
 #application = bottle.default_app()
 #httpserver.serve(application, host='0.0.0.0', port=8070)
