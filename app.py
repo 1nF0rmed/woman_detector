@@ -89,12 +89,12 @@ def handleRequest():
 
         if gender_text == gender_labels[0]:
             print "[LOG] Man"
-            return "0"
+
         else:
             print "[LOG] Woman"
             return "1"
 
-    return "[RESP]0"
+    return "0"
 
 # Space for other methods
 run(host='0.0.0.0', port=8080, debug=True)
