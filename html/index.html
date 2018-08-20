@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Coming Soon Template - by Pete Houston</title>
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="bulma.css">
+    <style>
+        .bg-cover {
+            background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8) ),
+                        url(bg_cover.jpg)
+                        no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .input.is-ghost {
+            background: transparent;
+            border: solid 1px #ffffff;
+            color: #ffffff;
+        }
+
+        .input.is-ghost::placeholder {
+            color: #888888;
+        }
+
+        .button.is-ease {
+            color: #eeeeee;
+            border-color: #eeeeee;
+            transition: color 0.35s ease, border-color 0.35s ease;
+        }
+
+        .button.is-ease:hover {
+            color: #ffffff;
+            border-color: #ffffff;
+        }
+
+        .hero .subtitle {
+            padding: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+
+<section class="hero is-info is-fullheight bg-cover">
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <div class="column is-6 is-offset-3">
+                <h1 class="title is-uppercase">
+                    Purity Chrome Extension Coming Soon
+                </h1>
+                <h2 class="subtitle">
+                    We will let you know as soon as product is released
+                </h2>
+                <div class="">
+
+                    <div class="field is-grouped">
+                        <p class="control is-expanded">
+                            <input class="input is-rounded is-ghost has-text-centered" type="text" placeholder="Enter your email">
+                        </p>
+                    </div>
+
+                    <div class="field is-grouped is-grouped-centered">
+                        <p class="control">
+                            <a class="button is-white is-outlined is-rounded is-grouped-centered is-ease is-uppercase has-text-weight-bold">
+                                Subscribe
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

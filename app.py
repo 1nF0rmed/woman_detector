@@ -1,4 +1,5 @@
 from bottle import route, run, post, get, hook, response, request
+from bottle import static_file
 import bottle
 import warnings
 from paste import httpserver
@@ -45,6 +46,14 @@ def enable_cors():
 @route('/<path:path>', method='OPTIONS')
 def options_handler(path=None):
     return
+
+@get('/')
+def handleIndex():
+    return static_file("index.html", root='html/')
+
+@route('/<filename>')
+def handleStatic(filename):
+    return static_file(filename, root='html/')
 
 # Handle image url
 @post('/checkFemaleUrl')
@@ -97,6 +106,7 @@ def handleRequest():
     return "0"
 
 # Space for other methods
-run(host='0.0.0.0', port=80, debug=True)
+run(host='0.0.0.0', port=80, debug=False)
+#run(host='0.0.0.0', port=8080, debug=True)
 #application = bottle.default_app()
 #httpserver.serve(application, host='0.0.0.0', port=8070)
